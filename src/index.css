@@ -1,12 +1,21 @@
-@import "tailwindcss";
-@import "tw-animate-css";
+@import 'tailwindcss';
+@import 'tw-animate-css';
 
-@import url("https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,700;1,700&display=swap');
 
 .rubik-gemstones-regular {
-  font-family: "Rubik Gemstones", system-ui;
+  font-family: 'Rubik Gemstones', system-ui;
   font-weight: 400;
   font-style: normal;
+}
+
+.cabin-bold {
+  font-family: 'Cabin', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: 'wdth' 100;
 }
 
 @custom-variant dark (&:is(.dark *));
@@ -128,6 +137,46 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* #navLink {
+  position: relative;
+  text-decoration: none;
+  color: #4a3b3b;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 25px;
+  border-radius: 30px;
+  transition: color 0.5s;
+  display: block;
+  z-index: 1;
+  overflow: hidden;
+} */
+
+#navLink:after {
+  content: '';
+  position: absolute;
+  background: #ff4081;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  z-index: -1;
+  transition:
+    top 0.5s,
+    opacity 0.5s;
+}
+
+#navLink:hover::after {
+  top: 50%;
+  opacity: 1;
+}
+
+#navLink:hover {
+  color: #fff;
 }
 
 #container {

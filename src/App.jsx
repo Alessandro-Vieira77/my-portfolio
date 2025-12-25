@@ -1,24 +1,33 @@
-import { Earth } from 'lucide-react'
-import { Button } from './components/ui/button'
 import StarSvg from './assets/star-06-svgrepo-com.svg?react'
 import { CarouselProjects } from './components/carousel-projects'
+import { useState } from 'react'
+import LanguageButton from './components/linguage-button'
 
 export default function App() {
   const navNames = ['Projects', 'About', 'Education', 'Contact']
+  const [language, setLanguage] = useState('en')
 
   return (
     <div id="container" className="relative flex min-h-screen flex-col">
-      <header className="fixed top-0 left-1/2 z-20 mx-auto mt-8 w-[700px] -translate-x-1/2 transform rounded-full bg-[#EBE1D1] px-6 py-4 text-black">
+      <header className="fixed top-0 left-1/2 z-20 mx-auto mt-8 w-[700px] -translate-x-1/2 transform rounded-full bg-[#EBE1D1] px-6 py-4">
         <nav className="w-full">
           <ul className="flex w-full items-center justify-between">
             {navNames.map(name => (
               <li key={name}>
-                <a href={`#${name.toLowerCase()}`}>{name}</a>
+                <a
+                  id="navLink"
+                  className="relative z-1 block overflow-hidden rounded-[32px] px-6 py-2.5 text-lg font-semibold text-[#4a3b3b] transition-colors duration-500"
+                  href={`#${name.toLowerCase()}`}
+                >
+                  {name}
+                </a>
               </li>
             ))}
-            <Button className="cursor-pointer space-x-2">
-              <Earth /> PT | EN
-            </Button>
+            {language === 'en' ? (
+              <LanguageButton L1="EN" L2="PT" onClick={() => setLanguage('pt')} />
+            ) : (
+              <LanguageButton L1="PT" L2="EN" onClick={() => setLanguage('en')} />
+            )}
           </ul>
         </nav>
       </header>
