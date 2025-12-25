@@ -1,6 +1,14 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap");
+
+.rubik-gemstones-regular {
+  font-family: "Rubik Gemstones", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -121,3 +129,60 @@
     @apply bg-background text-foreground;
   }
 }
+
+#container {
+  background-color: #41644a;
+}
+
+/* #container:hover {
+  background-color: #d38aa3;
+  color: #fff;
+  transform: translateY(-55%) scale(1.1);
+  box-shadow: 6px 6px #000;
+} */
+
+#card-project {
+  transition: all 0.2s ease;
+  /* transform: translateY(-20%); */
+}
+
+#card-project:hover {
+  /* background-color: #d38aa3; */
+  transform: translateY(-1%) scale(1.02);
+  box-shadow: 6px 6px #e9762b;
+}
+
+#view {
+  transition: all 0.2s ease;
+}
+
+#view:hover {
+  background-color: #e9762b;
+  color: #fff;
+  transform: translateY(-1%) scale(1.1);
+  box-shadow: 6px 6px #000;
+}
+
+#ContentView {
+  box-shadow: 10px 10px #e9762b;
+}
+
+#next {
+  transition: all 0.2s ease;
+  transform: translateY(-50%);
+}
+
+#prev {
+  transition: all 0.2s ease;
+  transform: translateY(-50%);
+}
+
+#next:hover,
+#prev:hover {
+  background-color: #e9762b;
+  color: #fff;
+  transform: translateY(-55%) scale(1.1);
+  box-shadow: 6px 6px #000;
+}
+
+/* text */
