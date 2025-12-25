@@ -9,7 +9,7 @@ export default function App() {
 
   return (
     <div id="container" className="relative flex min-h-screen flex-col">
-      <header className="fixed top-0 left-1/2 z-20 mx-auto mt-8 w-[700px] -translate-x-1/2 transform rounded-full bg-[#EBE1D1] px-6 py-4">
+      <header className="fixed top-0 left-1/2 z-20 mx-auto mt-8 w-full max-w-[700px] -translate-x-1/2 transform rounded-full bg-[#EBE1D1] px-6 py-4 drop-shadow-2xl">
         <nav className="w-full">
           <ul className="flex w-full items-center justify-between">
             {navNames.map(name => (
@@ -32,8 +32,26 @@ export default function App() {
         </nav>
       </header>
       <main>
-        <section id="home" className="flex h-screen w-full">
-          <h1>Home</h1>
+        <section
+          id="home"
+          className="relative flex h-screen w-full items-center justify-center overflow-hidden bg-[#e6beae] pt-20"
+        >
+          <img
+            className="star-1 hero-star h-24 w-24 object-contain"
+            src="https://aliceportfolio-dev.netlify.app/assets/star-1-Bwc5vTVD.png"
+            alt=""
+          />
+          <img
+            className="star-2 hero-star h-24 w-24 object-contain"
+            src="https://aliceportfolio-dev.netlify.app/assets/star-1-Bwc5vTVD.png"
+            alt=""
+          />
+          <img
+            id="hero-image"
+            className="z-10 h-auto w-full max-w-[700px] drop-shadow-2xl"
+            src="https://aliceportfolio-dev.netlify.app/assets/hero-image-BINzAQjM.png"
+            alt=""
+          />
         </section>
         <section id="projects" className="flex h-screen w-full flex-col items-center gap-8 pt-30">
           <div className="flex flex-col items-center gap-2">

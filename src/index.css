@@ -179,6 +179,59 @@
   color: #fff;
 }
 
+#hero-image {
+  animation: heroEnter 1.5s ease-out;
+}
+
+@keyframes heroEnter {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+}
+
+.star-1 {
+  top: 24%;
+  left: 28%;
+  animation-delay: 0s;
+}
+
+.star-2 {
+  bottom: 18%;
+  right: 24%;
+  animation-delay: 1.2s;
+}
+
+.hero-star {
+  position: absolute;
+  width: clamp(56px, 10vw, 120px);
+  height: auto;
+  pointer-events: none;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.12));
+  animation: starFloat 6s ease-in-out infinite;
+  z-index: 1;
+}
+
+@keyframes starFloat {
+  0% {
+    transform: translateY(0) scale(1) rotate(0);
+  }
+
+  50% {
+    transform: translateY(-10px) scale(1.03) rotate(2deg);
+  }
+  100% {
+    transform: translateY(0) scale(1) rotate(0);
+  }
+}
+
+@keyframes starEnter {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+}
+
 #container {
   background-color: #41644a;
 }
