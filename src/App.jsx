@@ -53,14 +53,22 @@ export default function App() {
             alt=""
           />
         </section>
-        <section id="projects" className="flex h-screen w-full flex-col items-center gap-8 pt-30">
+        {/* Projects */}
+        <section
+          id="projects"
+          className="flex min-h-screen w-full flex-col items-center gap-4 bg-[#f4eade] pt-20"
+        >
           <div className="flex flex-col items-center gap-2">
             <StarSvg className="h-8 w-8 object-contain" />
-            <h1 className="rubik-gemstones-regular text-5xl text-white uppercase">Meus Projetos</h1>
-            <StarSvg className="h-8 w-8 object-contain" />
-            <p className="text-xl text-white">Code • Design • Innovation</p>
+            <h1 className="jersey-10-regular text-shadow-pink w-80 text-center text-7xl text-black uppercase sm:w-full">
+              Meus Projetos
+            </h1>
+            <StarSvg className="h-6 w-6 object-contain" />
+            <p className="text-foreground text-xl">Code • Design • Innovation</p>
           </div>
-          <CarouselProjects />
+          <div className="w-full px-16">
+            <CarouselProjects />
+          </div>
         </section>
         <section id="about" className="flex h-screen w-full">
           <h1 className="">Sobre Mim</h1>

@@ -1,11 +1,12 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
 
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
 
-.rubik-gemstones-regular {
-  font-family: 'Rubik Gemstones', system-ui;
+.jersey-10-regular {
+  font-family: 'Jersey 10', sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -14,6 +15,14 @@
   font-family: 'Cabin', sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
+  font-style: normal;
+  font-variation-settings: 'wdth' 100;
+}
+
+.cabin-regular {
+  font-family: 'Cabin', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
   font-style: normal;
   font-variation-settings: 'wdth' 100;
 }
@@ -232,9 +241,9 @@
   }
 }
 
-#container {
+/* #container {
   background-color: #41644a;
-}
+} */
 
 /* #container:hover {
   background-color: #d38aa3;
@@ -248,13 +257,13 @@
   /* transform: translateY(-20%); */
 }
 
-#card-project:hover {
-  /* background-color: #d38aa3; */
+/* #card-project:hover {
+  background-color: #d38aa3;
   transform: translateY(-1%) scale(1.02);
   box-shadow: 6px 6px #e9762b;
-}
+} */
 
-#view {
+/* #view {
   transition: all 0.2s ease;
 }
 
@@ -263,12 +272,13 @@
   color: #fff;
   transform: translateY(-1%) scale(1.1);
   box-shadow: 6px 6px #000;
-}
+} */
 
 #ContentView {
   box-shadow: 10px 10px #e9762b;
 }
 
+/* Carousel arrows */
 #next {
   transition: all 0.2s ease;
   transform: translateY(-50%);
@@ -281,10 +291,14 @@
 
 #next:hover,
 #prev:hover {
-  background-color: #e9762b;
+  background-color: #d38aa3;
   color: #fff;
   transform: translateY(-55%) scale(1.1);
   box-shadow: 6px 6px #000;
 }
 
 /* text */
+.text-shadow-pink,
+.gallery {
+  text-shadow: 4px 4px 0px #d38aa3;
+}
