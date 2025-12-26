@@ -1,15 +1,16 @@
 import { Heart } from 'lucide-react'
+import HeartSvg from '@/assets/heart-svgrepo-com.svg?react'
 
-export default function LanguageButton({ L1, L2, onClick }) {
+export function LanguageButton({ L1, L2, onClick, color, colorL1, colorL2 }) {
   return (
     <button
       onClick={onClick}
       className="flex cursor-pointer items-center gap-2 rounded-[32px] bg-[#cd5c5c] px-5 py-2.5 text-lg transition-all duration-200 ease-in-out hover:-translate-y-0.5 hover:transform hover:bg-[#b84c4c] hover:shadow-xl"
     >
-      <Heart size={16} className="text-black" />{' '}
+      <HeartSvg className={`h-5 w-5 ${color}`} />{' '}
       <div className="flex items-center gap-1">
-        <p className="cabin-bold text-sm text-black">{L1}</p> |{' '}
-        <p className="cabin-bold text-sm text-white">{L2}</p>
+        <p className={`cabin-bold text-sm ${colorL1}`}>{L1}</p> <p className="pb-1 font-bold">|</p>
+        <p className={`cabin-bold text-sm ${colorL2}`}>{L2}</p>
       </div>
     </button>
   )

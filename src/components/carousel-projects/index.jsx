@@ -28,7 +28,7 @@ export function CarouselProjects() {
         ))}
       </CarouselContent>
       <CarouselPrevious id="prev" className="-left-11 h-12 w-12 shadow-[4px_4px_0_#000]" />
-      <CarouselNext id="next" className="-right-11 h-12 w-12 shadow-[4px_4px_0_#000]" />
+      <CarouselNext id="next" className="-right-9 h-12 w-12 shadow-[4px_4px_0_#000]" />
     </Carousel>
   )
 }
