@@ -1,8 +1,10 @@
+import { Recycle } from 'lucide-react'
 import StarSvg from './assets/star-06-svgrepo-com.svg?react'
 import { CarouselAbout } from './components/carousel-about'
 import { CarouselProjects } from './components/carousel-projects'
 import { Header } from './components/header'
 import { Menu } from './components/menu'
+import { Badge } from './components/ui/badge'
 
 export default function App() {
   return (
@@ -69,11 +71,68 @@ export default function App() {
         </section>
         <section
           id="education"
-          className="flex h-screen w-full bg-[#fdfbf7] bg-[repeating-linear-gradient(#cd5c5c_0px,#cd5c5c_1px,transparent_1px,transparent_32px)]"
+          className="flex min-h-screen w-full flex-col items-center gap-4 bg-[#fdfbf7] bg-[repeating-linear-gradient(#cd5c5c_0px,#cd5c5c_1px,transparent_1px,transparent_32px)] px-8 pt-30 pb-3.5 md:px-16"
         >
-          <h1>Faculdade</h1>
+          <h2 className="titleEducation caveat-bold relative z-1 block h-13 text-4xl md:h-17 md:text-7xl">
+            Estágio – Compass Uol
+          </h2>
+          <div className="grid w-full grid-cols-[1fr] lg:grid-cols-[1fr_1fr]">
+            <div className="grid w-full rounded-2xl border-2 bg-white p-8 shadow-md">
+              <div className="flex flex-col gap-8">
+                <div className="flex w-full items-center justify-between">
+                  <Badge className="jersey-10-regular text-md rounded-lg p-2 md:text-lg">
+                    {' '}
+                    Estágio: 16/09/2024 - 12/02/2025
+                  </Badge>
+                  <Recycle color="#cd5c5c" size={40} />
+                </div>
+
+                <div className="flex w-full flex-col gap-4">
+                  <h3 className="cabin-bold text-2xl font-bold md:text-4xl">Sobre o estágio</h3>
+                  <p className="text-md leading-normal sm:text-lg">
+                    Atuei como estagiário em Front-end Development (React) na Compass.uol, onde
+                    desenvolvi e mantive interfaces web modernas e responsivas utilizando React.
+                    Tive contato com o contexto de Cloud AWS, participando de projetos integrados à
+                    nuvem, consumindo APIs e seguindo boas práticas de desenvolvimento.
+                  </p>
+                  <p className="text-md leading-normal sm:text-lg">
+                    Trabalhei em colaboração com times ágeis, utilizando Git, aplicando conceitos de
+                    componentização, UX/UI e clean code, o que contribuiu significativamente para
+                    meu aprendizado técnico e profissional.
+                  </p>
+                </div>
+
+                <div className="flex w-full flex-col items-center gap-4">
+                  <h3 className="cabin-bold w-full text-left text-2xl font-bold md:text-4xl">
+                    Tecnologias
+                  </h3>
+                  <div className="flex w-full flex-wrap gap-4">
+                    <Badge className="cabin-bold rounded-lg text-xs"> React</Badge>
+                    <Badge className="cabin-bold rounded-lg text-xs"> Tailwind</Badge>
+                    <Badge className="cabin-bold rounded-lg text-xs"> JavaScript</Badge>
+                    <Badge className="cabin-bold rounded-lg text-xs"> TypeScript</Badge>
+                    <Badge className="cabin-bold rounded-lg text-xs"> Git</Badge>
+                    <Badge className="cabin-bold rounded-lg text-xs"> GitHub</Badge>
+                    <Badge className="cabin-bold rounded-lg text-xs"> AWS</Badge>
+                    <Badge className="cabin-bold rounded-lg text-xs"> Testing Library</Badge>
+                    <Badge className="cabin-bold rounded-lg text-xs"> Jest</Badge>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="flex w-full flex-col items-center justify-center gap-4 p-16">
+              <h3 className="cabin-bold text-4xl font-bold">Certificado</h3>
+              <a href="https://i.imgur.com/cabvGo2.jpeg" target="_blank">
+                <img
+                  src="https://i.imgur.com/cabvGo2.jpeg"
+                  className="w-fit rotate-2 rounded-lg object-contain shadow-md transition-all duration-300 hover:scale-110 hover:rotate-0"
+                  alt="certificado"
+                />
+              </a>
+            </div>
+          </div>
         </section>
-        <section id="contact" className="flex h-screen w-full">
+        <section id="contact" className="flex min-h-screen w-full">
           <h1>Contato</h1>
         </section>
       </main>

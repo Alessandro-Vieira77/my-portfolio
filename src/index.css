@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,700;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
 
 .jersey-10-regular {
   font-family: 'Jersey 10', sans-serif;
@@ -25,6 +26,13 @@
   font-weight: 400;
   font-style: normal;
   font-variation-settings: 'wdth' 100;
+}
+
+.caveat-bold {
+  font-family: 'Caveat', cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }
 
 @custom-variant dark (&:is(.dark *));
@@ -301,4 +309,17 @@
 .text-shadow-pink,
 .gallery {
   text-shadow: 4px 4px 0px #d38aa3;
+}
+
+.titleEducation::after {
+  content: '';
+  position: absolute;
+  bottom: 10px;
+  left: -10px;
+  width: 105%;
+  height: 25px;
+  background: #ffc0cb73;
+  z-index: -1;
+  transform: rotate(-1deg);
+  border-radius: 5px;
 }
