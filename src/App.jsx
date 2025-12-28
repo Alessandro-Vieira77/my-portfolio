@@ -1,4 +1,5 @@
 import StarSvg from './assets/star-06-svgrepo-com.svg?react'
+import { CarouselAbout } from './components/carousel-about'
 import { CarouselProjects } from './components/carousel-projects'
 import { Header } from './components/header'
 import { Menu } from './components/menu'
@@ -47,10 +48,29 @@ export default function App() {
             <CarouselProjects />
           </div>
         </section>
-        <section id="about" className="flex h-screen w-full">
-          <h1 className="">Sobre Mim</h1>
+        <section
+          id="about"
+          className="flex min-h-screen w-full flex-col items-center justify-center bg-[#fdfbf7] bg-[repeating-linear-gradient(transparent,transparent_29px,#eedac5_30px)] pt-26"
+        >
+          <div className="w-65">
+            <h1 className="jersey-10-regular text-center text-7xl text-black uppercase sm:w-full">
+              Sobre Mim
+            </h1>
+            <div className="mb-10 border-3 border-[#cd5c5c]"></div>
+          </div>
+          <div className="relative w-full px-4">
+            <img
+              className="absolute -top-5 left-1/2 z-10 mx-auto mt-0 h-[110px] w-[110px] -translate-x-1/2 rounded-full border-3 border-white object-cover"
+              src="https://i.pinimg.com/originals/bc/6f/70/bc6f70c1c6dd96e16b906d5b2a0bae4b.png"
+              alt=""
+            />
+            <CarouselAbout />
+          </div>
         </section>
-        <section id="education" className="flex h-screen w-full">
+        <section
+          id="education"
+          className="flex h-screen w-full bg-[#fdfbf7] bg-[repeating-linear-gradient(#cd5c5c_0px,#cd5c5c_1px,transparent_1px,transparent_32px)]"
+        >
           <h1>Faculdade</h1>
         </section>
         <section id="contact" className="flex h-screen w-full">

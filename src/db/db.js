@@ -55,3 +55,63 @@ export const projects = [
     categorys: ['Project', 'Design', 'Code', 'Full Stack'],
   },
 ]
+
+export const skills = [
+  {
+    frontEnd: [
+      {
+        name: 'JavaScript',
+      },
+      {
+        name: 'React',
+      },
+      {
+        name: 'Next.js',
+      },
+      {
+        name: 'Tailwind CSS',
+      },
+      {
+        name: 'TypeScript',
+      },
+      {
+        name: 'React-query',
+      },
+      {
+        name: 'Redux',
+      },
+      {
+        name: 'testing-library',
+      },
+    ],
+  },
+  {
+    backEnd: [
+      {
+        name: 'Node.js',
+      },
+      {
+        name: 'Express.js',
+      },
+      {
+        name: 'Docker',
+      },
+    ],
+  },
+  {
+    databaseAndTools: [
+      {
+        name: 'MongoDB',
+      },
+      {
+        name: 'PostgreSQL',
+      },
+      {
+        name: 'Git/GitHub',
+      },
+      {
+        name: 'Figma',
+      },
+    ],
+  },
+]
