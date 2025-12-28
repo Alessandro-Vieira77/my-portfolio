@@ -1,10 +1,13 @@
-import { Recycle } from 'lucide-react'
 import StarSvg from './assets/star-06-svgrepo-com.svg?react'
 import { CarouselAbout } from './components/carousel-about'
 import { CarouselProjects } from './components/carousel-projects'
 import { Header } from './components/header'
 import { Menu } from './components/menu'
 import { Badge } from './components/ui/badge'
+import { Card, CardContent, CardHeader } from './components/ui/card'
+import { SocialNetwork } from './components/social-network'
+import { Mail, Linkedin, Recycle, Github, MessageCircle, Paperclip } from 'lucide-react'
+import { FormMsg } from './components/form-msg'
 
 export default function App() {
   return (
@@ -132,8 +135,56 @@ export default function App() {
             </div>
           </div>
         </section>
-        <section id="contact" className="flex min-h-screen w-full">
-          <h1>Contato</h1>
+        <section
+          id="contact"
+          className="flex min-h-screen w-full flex-col items-center gap-20 bg-[#FDFBF7] bg-[linear-gradient(#E8E8E8_1px,transparent_1px),linear-gradient(90deg,#E8E8E8_1px,transparent_1px)] bg-[length:30px_30px] px-8 pt-28 sm:px-16"
+        >
+          <div className="grid w-full grid-cols-[1fr] gap-4 lg:grid-cols-[1fr_1fr]">
+            <div className="flex w-full flex-col gap-4">
+              <h2 className="caveat-bold relative z-1 block h-13 text-4xl md:h-17 md:text-6xl">
+                Vamos conversar?
+              </h2>
+              <p className="cabin-regular text-sm leading-normal text-[#6B4F4F] md:text-lg">
+                Estou sempre aberto a novas oportunidades, parcerias e conversas sobre tecnologia,
+                desenvolvimento web, UI/UX e projetos criativos.
+              </p>
+              <p className="cabin-regular text-sm leading-normal text-[#6B4F4F] md:text-lg">
+                Ficarei muito feliz em receber sua mensagem! Seja para um projeto ou apenas para
+                trocar uma ideia. ✨
+              </p>
+            </div>
+            <div className="flex flex-col gap-4 rounded-lg bg-white p-8 shadow-md">
+              <a href="">
+                <SocialNetwork
+                  icon={<Mail color="#D38AA3" size={25} />}
+                  text="valessandrovieira@gmail.com"
+                />
+              </a>
+              <a href="">
+                <SocialNetwork
+                  icon={<Linkedin color="#D38AA3" size={25} />}
+                  text="/alessandro-vieira02"
+                />
+              </a>
+
+              <a href="">
+                <SocialNetwork
+                  icon={<Github color="#D38AA3" size={25} />}
+                  text="/Alessandro-Vieira77"
+                />
+              </a>
+
+              <a href="">
+                <SocialNetwork
+                  icon={<MessageCircle color="#D38AA3" size={25} />}
+                  text="Whatsapp (Iniciar Chat)"
+                />
+              </a>
+            </div>
+          </div>
+          <div className="flex w-full items-center justify-center pb-10">
+            <FormMsg />
+          </div>
         </section>
       </main>
     </div>
