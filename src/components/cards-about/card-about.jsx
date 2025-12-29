@@ -10,9 +10,11 @@ export function CardAbout() {
       </CardHeader>
       <CardContent className="cabin-regular flex flex-col gap-8 px-8 text-sm text-white md:px-15 md:text-lg">
         <p className="text-center">
-          Sou <strong>Alessandro Vieira</strong>, estudante de{' '}
-          <strong>Engenharia de Computação na UERJ</strong>, apaixonado por tecnologia, inovação e
-          criação de soluções que unem lógica, design e experiência do usuário.
+          Sou <strong>Estudante de Engenharia de Software</strong> e{' '}
+          <strong>Desenvolvedor Full Stack</strong>, com experiência no desenvolvimento de
+          aplicações web completas, atuando tanto no front-end quanto no back-end. Busco aplicar
+          boas práticas, criar soluções escaláveis e evoluir constantemente por meio de projetos
+          reais e aprendizado contínuo.
         </p>
         <p className="text-center">
           Além disso, sou apaixonado por <strong>aprender e me desafiar</strong>, sempre buscando

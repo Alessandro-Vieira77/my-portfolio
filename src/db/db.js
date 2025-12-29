@@ -126,6 +126,12 @@ export const skills = [
       {
         name: 'Figma',
       },
+      {
+        name: 'Drizzle',
+      },
+      {
+        name: 'Prisma',
+      },
     ],
   },
 ]

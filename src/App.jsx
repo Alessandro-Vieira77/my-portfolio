@@ -33,7 +33,6 @@ export default function App() {
           <CodeLogo
             id="hero-image"
             className="z-10 h-auto w-full max-w-[400px] drop-shadow-2xl"
-            // src="https://aliceportfolio-dev.netlify.app/assets/hero-image-BINzAQjM.png"
             alt=""
           />
         </section>
@@ -155,27 +154,27 @@ export default function App() {
               </p>
             </div>
             <div className="flex flex-col gap-4 rounded-lg bg-white p-8 shadow-md">
-              <a href="">
+              <p>
                 <SocialNetwork
                   icon={<Mail color="#3674B5" size={25} />}
                   text="valessandrovieira@gmail.com"
                 />
-              </a>
-              <a href="">
+              </p>
+              <a href="https://www.linkedin.com/in/alessandro-vieira02" target="_blank">
                 <SocialNetwork
                   icon={<Linkedin color="#3674B5" size={25} />}
                   text="/alessandro-vieira02"
                 />
               </a>
 
-              <a href="">
+              <a href="https://github.com/Alessandro-Vieira77" target="_blank">
                 <SocialNetwork
                   icon={<Github color="#3674B5" size={25} />}
                   text="/Alessandro-Vieira77"
                 />
               </a>
 
-              <a href="">
+              <a href="https://wa.me/5598985825422" target="_blank">
                 <SocialNetwork
                   icon={<MessageCircle color="#3674B5" size={25} />}
                   text="Whatsapp (Iniciar Chat)"

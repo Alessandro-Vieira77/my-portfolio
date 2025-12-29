@@ -40,7 +40,7 @@ export function CardFreelance() {
             <h2 className="text-2xl font-bold text-white">Disponibilidade</h2>
           </div>
           <p className="cabin-regular text-sm text-[##6B4F4F] md:text-lg">
-            Aberta a oportunidades de freelance e projetos nas áreas de desenvolvimento de software,
+            Aberto a oportunidades de freelance e projetos nas áreas de desenvolvimento de software,
             front-end, back-end, UI/UX e aplicações interativas. Vamos criar algo juntos?
           </p>
         </div>
