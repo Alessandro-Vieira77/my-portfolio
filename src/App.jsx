@@ -8,6 +8,7 @@ import { Card, CardContent, CardHeader } from './components/ui/card'
 import { SocialNetwork } from './components/social-network'
 import { Mail, Linkedin, Recycle, Github, MessageCircle, Paperclip } from 'lucide-react'
 import { FormMsg } from './components/form-msg'
+import CodeLogo from './assets/codeLogo.svg?react'
 
 export default function App() {
   return (
@@ -17,7 +18,7 @@ export default function App() {
       <main>
         <section
           id="home"
-          className="universe relative flex h-screen w-full items-center justify-center overflow-hidden bg-[#819A91] pt-20"
+          className="relative flex h-screen w-full items-center justify-center overflow-hidden bg-[#819A91] pt-20"
         >
           <img
             className="star-1 hero-star h-24 w-24 object-contain"
@@ -29,10 +30,10 @@ export default function App() {
             src="https://aliceportfolio-dev.netlify.app/assets/star-1-Bwc5vTVD.png"
             alt=""
           />
-          <img
+          <CodeLogo
             id="hero-image"
-            className="z-10 h-auto w-full max-w-[700px] drop-shadow-2xl"
-            src="https://aliceportfolio-dev.netlify.app/assets/hero-image-BINzAQjM.png"
+            className="z-10 h-auto w-full max-w-[400px] drop-shadow-2xl"
+            // src="https://aliceportfolio-dev.netlify.app/assets/hero-image-BINzAQjM.png"
             alt=""
           />
         </section>
