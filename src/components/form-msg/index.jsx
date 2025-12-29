@@ -84,7 +84,7 @@ export function FormMsg() {
                     <textarea
                       placeholder="Digite sua mensagem"
                       {...field}
-                      className="aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive h-24 w-full rounded-lg border px-4 py-2 shadow-xs outline-none focus-visible:border-[#cd5c5c] focus-visible:ring-[3px] focus-visible:ring-[#cd5c5c]/50"
+                      className="aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive h-24 w-full rounded-lg border px-4 py-2 shadow-xs outline-none focus-visible:border-[#3674B5] focus-visible:ring-[3px] focus-visible:ring-[#3674B5]/50"
                     />
                   </FormControl>
                   <FormMessage />
@@ -94,7 +94,7 @@ export function FormMsg() {
             <CardFooter className="flex w-full items-center justify-center">
               <Button
                 type="submit"
-                className="min-h-13 min-w-55 transform transition-all duration-300 ease-in-out hover:translate-y-[-5px] hover:shadow-lg hover:shadow-[#cd5c5c]"
+                className="min-h-13 min-w-55 transform transition-all duration-300 ease-in-out hover:translate-y-[-5px] hover:shadow-lg hover:shadow-[#3674B5]"
               >
                 Enviar mensagem
               </Button>

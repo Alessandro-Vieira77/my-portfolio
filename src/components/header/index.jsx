@@ -5,14 +5,14 @@ export function Header() {
   const navNames = ['Projects', 'About', 'Education', 'Contact']
   const [language, setLanguage] = useState('en')
   return (
-    <header className="fixed top-0 left-1/2 z-20 mx-auto mt-6 hidden w-full max-w-[700px] -translate-x-1/2 transform rounded-full bg-[#EBE1D1] px-6 py-4 drop-shadow-2xl md:block">
+    <header className="fixed top-0 left-1/2 z-20 mx-auto mt-6 hidden w-full max-w-[700px] -translate-x-1/2 transform rounded-full bg-[#819A91] px-6 py-4 drop-shadow-2xl md:block">
       <nav className="w-full">
         <ul className="flex w-full items-center justify-between">
           {navNames.map(name => (
             <li key={name}>
               <a
                 id="navLink"
-                className="relative z-1 block overflow-hidden rounded-[32px] px-6 py-2.5 text-lg font-semibold text-[#4a3b3b] transition-colors duration-500"
+                className="relative z-1 block overflow-hidden rounded-[32px] px-6 py-2.5 text-lg font-semibold text-[#ffff] transition-colors duration-500"
                 href={`#${name.toLowerCase()}`}
               >
                 {name}

@@ -173,7 +173,7 @@
 #navLink:after {
   content: '';
   position: absolute;
-  background: #ff4081;
+  background: #3674b5;
   width: 100%;
   height: 100%;
   border-radius: 30px;
@@ -265,23 +265,6 @@
   /* transform: translateY(-20%); */
 }
 
-/* #card-project:hover {
-  background-color: #d38aa3;
-  transform: translateY(-1%) scale(1.02);
-  box-shadow: 6px 6px #e9762b;
-} */
-
-/* #view {
-  transition: all 0.2s ease;
-}
-
-#view:hover {
-  background-color: #e9762b;
-  color: #fff;
-  transform: translateY(-1%) scale(1.1);
-  box-shadow: 6px 6px #000;
-} */
-
 #ContentView {
   box-shadow: 10px 10px #e9762b;
 }
@@ -299,7 +282,7 @@
 
 #next:hover,
 #prev:hover {
-  background-color: #d38aa3;
+  background-color: #3674b5;
   color: #fff;
   transform: translateY(-55%) scale(1.1);
   box-shadow: 6px 6px #000;
@@ -318,7 +301,7 @@
   left: -10px;
   width: 105%;
   height: 25px;
-  background: #ffc0cb73;
+  background: #bbe0ef;
   z-index: -1;
   transform: rotate(-1deg);
   border-radius: 5px;

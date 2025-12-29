@@ -17,7 +17,7 @@ export default function App() {
       <main>
         <section
           id="home"
-          className="relative flex h-screen w-full items-center justify-center overflow-hidden bg-[#e6beae] pt-20"
+          className="universe relative flex h-screen w-full items-center justify-center overflow-hidden bg-[#819A91] pt-20"
         >
           <img
             className="star-1 hero-star h-24 w-24 object-contain"
@@ -39,11 +39,11 @@ export default function App() {
         {/* Projects */}
         <section
           id="projects"
-          className="flex min-h-screen w-full flex-col items-center gap-4 bg-[#f4eade] pt-20"
+          className="flex min-h-screen w-full flex-col items-center gap-4 bg-[#D1D8BE] pt-20"
         >
           <div className="flex flex-col items-center gap-2">
             <StarSvg className="h-8 w-8 object-contain" />
-            <h1 className="jersey-10-regular text-shadow-pink w-80 text-center text-7xl text-black uppercase sm:w-full">
+            <h1 className="jersey-10-regular w-80 text-center text-7xl text-[#3674B5] uppercase text-shadow-[4px_4px_0_#000] sm:w-full">
               Meus Projetos
             </h1>
             <StarSvg className="h-6 w-6 object-contain" />
@@ -55,13 +55,13 @@ export default function App() {
         </section>
         <section
           id="about"
-          className="flex min-h-screen w-full flex-col items-center justify-center bg-[#fdfbf7] bg-[repeating-linear-gradient(transparent,transparent_29px,#eedac5_30px)] pt-26"
+          className="flex min-h-screen w-full flex-col items-center justify-center bg-[#EEEFE0] bg-[repeating-linear-gradient(transparent,transparent_29px,#eedac5_30px)] pt-26"
         >
           <div className="w-65">
             <h1 className="jersey-10-regular text-center text-7xl text-black uppercase sm:w-full">
               Sobre Mim
             </h1>
-            <div className="mb-10 border-3 border-[#cd5c5c]"></div>
+            <div className="mb-10 border-3 border-[#3674B5]"></div>
           </div>
           <div className="relative w-full px-4">
             <img
@@ -74,7 +74,7 @@ export default function App() {
         </section>
         <section
           id="education"
-          className="flex min-h-screen w-full flex-col items-center gap-4 bg-[#fdfbf7] bg-[repeating-linear-gradient(#cd5c5c_0px,#cd5c5c_1px,transparent_1px,transparent_32px)] px-8 pt-30 pb-3.5 md:px-16"
+          className="flex min-h-screen w-full flex-col items-center gap-4 bg-[#EEEFE0] bg-[repeating-linear-gradient(#3674B5_0px,#3674B5_1px,transparent_1px,transparent_32px)] px-8 pt-30 pb-3.5 md:px-16"
         >
           <h2 className="titleEducation caveat-bold relative z-1 block h-13 text-4xl md:h-17 md:text-7xl">
             Estágio – Compass Uol
@@ -87,7 +87,7 @@ export default function App() {
                     {' '}
                     Estágio: 16/09/2024 - 12/02/2025
                   </Badge>
-                  <Recycle color="#cd5c5c" size={40} />
+                  <Recycle color="#3674B5" size={40} />
                 </div>
 
                 <div className="flex w-full flex-col gap-4">
@@ -124,7 +124,7 @@ export default function App() {
               </div>
             </div>
             <div className="flex w-full flex-col items-center justify-center gap-4 p-16">
-              <h3 className="cabin-bold text-4xl font-bold">Certificado</h3>
+              <h3 className="caveat-bold text-4xl font-bold">Certificado</h3>
               <a href="https://i.imgur.com/cabvGo2.jpeg" target="_blank">
                 <img
                   src="https://i.imgur.com/cabvGo2.jpeg"
@@ -156,27 +156,27 @@ export default function App() {
             <div className="flex flex-col gap-4 rounded-lg bg-white p-8 shadow-md">
               <a href="">
                 <SocialNetwork
-                  icon={<Mail color="#D38AA3" size={25} />}
+                  icon={<Mail color="#3674B5" size={25} />}
                   text="valessandrovieira@gmail.com"
                 />
               </a>
               <a href="">
                 <SocialNetwork
-                  icon={<Linkedin color="#D38AA3" size={25} />}
+                  icon={<Linkedin color="#3674B5" size={25} />}
                   text="/alessandro-vieira02"
                 />
               </a>
 
               <a href="">
                 <SocialNetwork
-                  icon={<Github color="#D38AA3" size={25} />}
+                  icon={<Github color="#3674B5" size={25} />}
                   text="/Alessandro-Vieira77"
                 />
               </a>
 
               <a href="">
                 <SocialNetwork
-                  icon={<MessageCircle color="#D38AA3" size={25} />}
+                  icon={<MessageCircle color="#3674B5" size={25} />}
                   text="Whatsapp (Iniciar Chat)"
                 />
               </a>

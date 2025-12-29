@@ -3,12 +3,12 @@ import { Card, CardContent, CardHeader } from '../ui/card'
 
 export function CardAbout() {
   return (
-    <Card className="min-h-[500px] w-full max-w-[850px] bg-[#E6C0C0]">
+    <Card className="min-h-[500px] w-full max-w-[850px] bg-[#3674B5]">
       <CardHeader className="flex items-center justify-center gap-2 pt-10">
-        <User className="w-6 object-contain md:w-10" />{' '}
-        <p className="jersey-10-regular text-2xl md:text-[41px]">Quem eu sou</p>
+        <User className="w-6 object-contain text-white md:w-10" size={30} />{' '}
+        <p className="jersey-10-regular text-2xl text-white md:text-[41px]">Quem eu sou</p>
       </CardHeader>
-      <CardContent className="cabin-regular flex flex-col gap-8 px-8 text-sm text-[##6B4F4F] md:px-15 md:text-lg">
+      <CardContent className="cabin-regular flex flex-col gap-8 px-8 text-sm text-white md:px-15 md:text-lg">
         <p className="text-center">
           Sou <strong>Alessandro Vieira</strong>, estudante de{' '}
           <strong>Engenharia de Computação na UERJ</strong>, apaixonado por tecnologia, inovação e

@@ -21,10 +21,10 @@ export function Menu() {
   return (
     <div className="fixed top-6 left-0 z-20 flex w-full justify-between px-6 md:hidden">
       <Sheet>
-        <SheetTrigger className="rounded-full border border-white bg-[#eedac5] px-4 py-2">
-          <TextAlignJustify size={30} color="#ff4081" />
+        <SheetTrigger className="rounded-full border border-white bg-[#bbe0ef] px-4 py-2">
+          <TextAlignJustify size={30} color="#3674B5" />
         </SheetTrigger>
-        <SheetContent className="border-2 border-white bg-[#eedac5]">
+        <SheetContent className="border-2 border-white bg-[#bbe0ef]">
           <SheetHeader>
             <SheetTitle>Menu</SheetTitle>
           </SheetHeader>
