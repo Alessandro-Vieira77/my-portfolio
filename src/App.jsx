@@ -154,12 +154,12 @@ export default function App() {
               </p>
             </div>
             <div className="flex flex-col gap-4 rounded-lg bg-white p-8 shadow-md">
-              <p>
+              <a href="mailto:valessandrovieira@gmail.com">
                 <SocialNetwork
                   icon={<Mail color="#3674B5" size={25} />}
                   text="valessandrovieira@gmail.com"
                 />
-              </p>
+              </a>
               <a href="https://www.linkedin.com/in/alessandro-vieira02" target="_blank">
                 <SocialNetwork
                   icon={<Linkedin color="#3674B5" size={25} />}

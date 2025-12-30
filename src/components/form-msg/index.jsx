@@ -3,17 +3,12 @@ import { Heart, Paperclip } from 'lucide-react'
 import z from 'zod'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
-import {
-  Form,
-  FormControl,
-  FormDescription,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from '../ui/form'
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '../ui/form'
 import { Input } from '../ui/input'
 import { Button } from '../ui/button'
+import emailjs from '@emailjs/browser'
+import { toast } from 'sonner'
+import { useRef } from 'react'
 
 export function FormMsg() {
   const formSchema = z.object({
@@ -31,8 +26,27 @@ export function FormMsg() {
     },
   })
 
-  const onSubmit = data => {
-    console.log(data)
+  const ref = useRef()
+
+  const onSubmit = async e => {
+    e.preventDefault()
+    await emailjs
+      .sendForm(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        ref.current,
+        { publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY },
+      )
+      .then(() => {
+        form.reset()
+        console.log('Mensagem enviada com sucesso!')
+        toast.success('Mensagem enviada com sucesso!')
+      })
+      .catch(error => {
+        console.error(error)
+        console.log('Erro ao enviar mensagem')
+        toast.error('Erro ao enviar mensagem')
+      })
   }
 
   return (
@@ -46,7 +60,7 @@ export function FormMsg() {
       </CardHeader>
       <CardContent>
         <Form {...form}>
-          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+          <form ref={ref} onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
             <FormField
               control={form.control}
               name="name"
@@ -80,7 +94,6 @@ export function FormMsg() {
                 <FormItem>
                   <FormLabel>Mensagem</FormLabel>
                   <FormControl>
-                    {/* <Input placeholder="Digite sua mensagem" {...field} /> */}
                     <textarea
                       placeholder="Digite sua mensagem"
                       {...field}
@@ -93,10 +106,12 @@ export function FormMsg() {
             />
             <CardFooter className="flex w-full items-center justify-center">
               <Button
+                disabled={form.formState.isSubmitting}
                 type="submit"
                 className="min-h-13 min-w-55 transform transition-all duration-300 ease-in-out hover:translate-y-[-5px] hover:shadow-lg hover:shadow-[#3674B5]"
               >
                 Enviar mensagem
+                {form.formState.isSubmitting && '...'}
               </Button>
             </CardFooter>
           </form>

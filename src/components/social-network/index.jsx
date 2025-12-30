@@ -4,7 +4,7 @@ export function SocialNetwork({ icon, text }) {
       <div className="flex h-10 w-10 items-center justify-center rounded-full border-2 border-[#3674B5] bg-[#bbe0ef]">
         {icon}
       </div>{' '}
-      <p className="text-sm text-[#6B4F4F] hover:text-black">{text}</p>
+      <span className="text-sm text-[#6B4F4F] hover:text-black">{text}</span>
     </div>
   )
 }
