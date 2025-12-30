@@ -1,12 +1,8 @@
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
-import { Label } from '@/components/ui/label'
+import { useTranslation } from 'react-i18next'
 import {
   Sheet,
   SheetClose,
   SheetContent,
-  SheetDescription,
-  SheetFooter,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
@@ -16,8 +12,14 @@ import { useState } from 'react'
 import { LanguageButton } from '../linguage-button/index'
 
 export function Menu() {
+  const { i18n, t } = useTranslation()
   const [language, setLanguage] = useState('en')
-  const navNames = ['Projects', 'About', 'Education', 'Contact']
+  const navNames = [
+    `${t('header.projects')}`,
+    `${t('header.about')}`,
+    `${t('header.education')}`,
+    `${t('header.contact')}`,
+  ]
   return (
     <div className="fixed top-6 left-0 z-20 flex w-full justify-between px-6 md:hidden">
       <Sheet>
@@ -52,7 +54,10 @@ export function Menu() {
         <LanguageButton
           L1="EN"
           L2="PT"
-          onClick={() => setLanguage('pt')}
+          onClick={() => {
+            setLanguage('pt')
+            i18n.changeLanguage('pt-BR')
+          }}
           color="text-black"
           colorL1="text-black"
           colorL2="text-white"
@@ -61,7 +66,10 @@ export function Menu() {
         <LanguageButton
           L1="PT"
           L2="EN"
-          onClick={() => setLanguage('en')}
+          onClick={() => {
+            setLanguage('en')
+            i18n.changeLanguage('en')
+          }}
           color="text-white"
           colorL1="text-white"
           colorL2="text-black"

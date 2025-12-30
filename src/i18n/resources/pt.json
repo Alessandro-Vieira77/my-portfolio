@@ -6,7 +6,7 @@
     "contact": "Contato"
   },
   "sessionProjects": {
-    "myProjects": "Meus Projetos",
+    "title": "Meus Projetos",
     "myProjectDescription": "Código • Design • Inovação",
     "cardButtonView": "Visualizar",
     "projects": {

@@ -249,17 +249,6 @@
   }
 }
 
-/* #container {
-  background-color: #41644a;
-} */
-
-/* #container:hover {
-  background-color: #d38aa3;
-  color: #fff;
-  transform: translateY(-55%) scale(1.1);
-  box-shadow: 6px 6px #000;
-} */
-
 #card-project {
   transition: all 0.2s ease;
   /* transform: translateY(-20%); */
@@ -306,3 +295,24 @@
   transform: rotate(-1deg);
   border-radius: 5px;
 }
+
+/* largura da scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* fundo da scrollbar */
+::-webkit-scrollbar-track {
+  background: #1f2937; /* cinza escuro */
+}
+
+/* parte que desliza */
+::-webkit-scrollbar-thumb {
+  background: #3674b5; /* verde */
+  border-radius: 8px;
+}
+
+/* hover */
+/* ::-webkit-scrollbar-thumb:hover {
+  background: #6097d2;
+} */
