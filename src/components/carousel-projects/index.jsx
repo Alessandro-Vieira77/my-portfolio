@@ -7,11 +7,15 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from '@/components/ui/carousel'
+import { useContext } from 'react'
+import { Context } from '@/context/context'
 
-import { projects } from '@/db/db'
+// import { projects } from '@/db/db'
 import { CardProject } from '../card-project'
 
 export function CarouselProjects() {
+  const { projects } = useContext(Context)
+  console.log(projects)
   return (
     <Carousel className="mx-auto w-full max-w-4xl">
       <CarouselContent className="gap-4 py-10">

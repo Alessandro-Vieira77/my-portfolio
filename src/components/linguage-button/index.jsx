@@ -1,4 +1,3 @@
-import { Heart } from 'lucide-react'
 import HeartSvg from '@/assets/heart-svgrepo-com.svg?react'
 
 export function LanguageButton({ L1, L2, onClick, color, colorL1, colorL2 }) {

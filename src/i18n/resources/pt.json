@@ -1,0 +1,101 @@
+{
+  "header": {
+    "projects": "Projetos",
+    "about": "Sobre",
+    "education": "Educação",
+    "contact": "Contato"
+  },
+  "sessionProjects": {
+    "myProjects": "Meus Projetos",
+    "myProjectDescription": "Código • Design • Inovação",
+    "cardButtonView": "Visualizar",
+    "projects": {
+      "finTrack": {
+        "description": "Criei o FinTrack, um painel intuitivo que ajuda os usuários a organizar suas vidas financeiras. A ferramenta permite que os usuários registrem receitas, despesas e investimentos, salvem e editem cada transação por data e visualizem todo o seu histórico de forma simples e prática. O objetivo do projeto é proporcionar clareza, autonomia e controle financeiro por meio de uma interface amigável, projetada para auxiliar na tomada de melhores decisões.",
+        "objectives": "Gerenciamento de finanças pessoais para pessoas que estão começando a economizar e investir.",
+        "challengesEndSolutions": "FinTrack é uma plataforma que ajuda as pessoas a gerenciar suas finanças pessoais."
+      }
+    },
+    "contentProject": {
+      "gallery": "Galeria",
+      "objectives": "Objetivos",
+      "technologies": "Tecnologias",
+      "challengesEndSolutions": "Desafios & Soluções",
+      "buttonLiveProject": "Projeto ao vivo"
+    }
+  },
+
+  "sessionAbout": {
+    "title": "Sobre Mim",
+    "cards": {
+      "whoAmI": {
+        "title": "Quem eu sou?",
+        "description1": "Sou Estudante de Engenharia de Software e Desenvolvedor Full Stack, com experiência no desenvolvimento de aplicações web completas, atuando tanto no front-end quanto no back-end. Busco aplicar boas práticas, criar soluções escaláveis e evoluir constantemente por meio de projetos reais e aprendizado contínuo.",
+        "description2": "Além disso, sou apaixonado por aprender e me desafiar, sempre buscando aprimorar minhas habilidades e contribuir para projetos que possam impactar positivamente a sociedade."
+      },
+      "skills": {
+        "title": "Habilidades Técnicas"
+      },
+      "softSkills": {
+        "title": "Habilidades Sociais",
+        "badge1": "Comunicação em Equipe",
+        "badge2": "Organização & Proatividade",
+        "badge3": "Aprendizado Rápido",
+        "badge4": "Criatividade",
+        "badge5": "Resolução de Problemas",
+        "badge6": "Compromisso com Metas"
+      },
+      "freelance": {
+        "title": "Interesses & Freelances",
+        "subtitle": "Interesses",
+        "badge1": "Engenharia de Software",
+        "badge2": "Desenvolvimento Web",
+        "badge3": "Design de Interface",
+        "badge4": "Inovação Tecnológica",
+        "badge5": "Projetos Multidisciplinares",
+        "availability": {
+          "title": "Disponibilidade",
+          "description": "Disponível para trabalhos freelances e projetos nas áreas de desenvolvimento de software, front-end, back-end, UI/UX e aplicações interativas. Vamos criar algo juntos?"
+        }
+      }
+    }
+  },
+  "sesseionEducation": {
+    "internship": {
+      "title": "Estágio – Compass Uol",
+      "technologies": "Tecnologias",
+      "certificate": "Certificado",
+      "internshipDate": "Estágio",
+      "aboutInternship": "Sobre o estágio",
+      "aboutInternshipDescription": {
+        "description1": "Atuei como estagiário em Front-end Development (React) na Compass.uol, onde desenvolvi e mantive interfaces web modernas e responsivas utilizando React. Tive contato com o contexto de Cloud AWS, participando de projetos integrados à nuvem, consumindo APIs e seguindo boas práticas de desenvolvimento.",
+        "description2": "Colaborei com equipes ágeis, utilizando Git e aplicando conceitos de componentização, UX/UI e código limpo, o que contribuiu significativamente para meu aprendizado técnico e profissional."
+      }
+    }
+  },
+  "sessionContact": {
+    "conversation": {
+      "title": "Vamos conversar?",
+      "description1": "Estamos sempre abertos a novas oportunidades, parcerias e conversas sobre tecnologia, desenvolvimento web, UI/UX e projetos criativos.",
+      "description2": "Eu ficaria muito feliz em receber sua mensagem! Seja para um projeto ou apenas para trocar ideias.",
+      "chat": "Iniciar chat"
+    },
+    "message": {
+      "title": "Enviar mensagem",
+      "name": "Nome",
+      "email": "Email",
+      "message": "Mensagem",
+      "nameError": "O nome deve ter pelo menos 3 caracteres.",
+      "emailError": "Endereço de email inválido.",
+      "messageError": "A mensagem deve ter pelo menos 10 caracteres.",
+      "placeholderName": "Digite seu nome",
+      "placeholderEmail": "Digite seu email",
+      "placeholderMessage": "Digite sua mensagem",
+      "button": "Enviar mensagem"
+    }
+  },
+  "notifications": {
+    "success": "Mensagem enviada com sucesso!",
+    "error": "Erro ao enviar mensagem"
+  }
+}

@@ -1,5 +1,5 @@
 import { Card, CardContent, CardFooter, CardHeader } from '../ui/card'
-import { Heart, Paperclip } from 'lucide-react'
+import { Paperclip } from 'lucide-react'
 import z from 'zod'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
@@ -9,12 +9,14 @@ import { Button } from '../ui/button'
 import emailjs from '@emailjs/browser'
 import { toast } from 'sonner'
 import { useRef } from 'react'
+import { useTranslation } from 'react-i18next'
 
 export function FormMsg() {
+  const { t } = useTranslation()
   const formSchema = z.object({
-    name: z.string().trim().min(3, 'Nome deve ter pelo menos 3 caracteres'),
-    email: z.string().trim().email('Email inválido'),
-    message: z.string().trim().min(10, 'Mensagem deve ter pelo menos 10 caracteres'),
+    name: z.string().trim().min(3, t('sessionContact.message.nameError')),
+    email: z.string().trim().email(t('sessionContact.message.emailError')),
+    message: z.string().trim().min(10, t('sessionContact.message.messageError')),
   })
 
   const form = useForm({
@@ -28,8 +30,7 @@ export function FormMsg() {
 
   const ref = useRef()
 
-  const onSubmit = async e => {
-    e.preventDefault()
+  const onSubmit = async () => {
     await emailjs
       .sendForm(
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
@@ -40,12 +41,12 @@ export function FormMsg() {
       .then(() => {
         form.reset()
         console.log('Mensagem enviada com sucesso!')
-        toast.success('Mensagem enviada com sucesso!')
+        toast.success(t('notifications.success'))
       })
       .catch(error => {
         console.error(error)
         console.log('Erro ao enviar mensagem')
-        toast.error('Erro ao enviar mensagem')
+        toast.error(t('notifications.error'))
       })
   }
 
@@ -56,7 +57,9 @@ export function FormMsg() {
           size={40}
           className="absolute inset-1/2 -top-1 -translate-x-1/2 -translate-y-1/2 text-[var(--ring)]"
         />
-        <h2 className="jersey-10-regular text-center text-4xl font-bold">Enviar uma mensagem ✨</h2>
+        <h2 className="jersey-10-regular text-center text-4xl font-bold">
+          {t('sessionContact.message.title')}✨
+        </h2>
       </CardHeader>
       <CardContent>
         <Form {...form}>
@@ -66,9 +69,9 @@ export function FormMsg() {
               name="name"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Nome</FormLabel>
+                  <FormLabel>{t('sessionContact.message.name')}</FormLabel>
                   <FormControl>
-                    <Input placeholder="Digite seu nome" {...field} />
+                    <Input placeholder={t('sessionContact.message.placeholderName')} {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -79,9 +82,9 @@ export function FormMsg() {
               name="email"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Email</FormLabel>
+                  <FormLabel>{t('sessionContact.message.email')}</FormLabel>
                   <FormControl>
-                    <Input placeholder="Digite seu email" {...field} />
+                    <Input placeholder={t('sessionContact.message.placeholderEmail')} {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -92,10 +95,10 @@ export function FormMsg() {
               name="message"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Mensagem</FormLabel>
+                  <FormLabel>{t('sessionContact.message.message')}</FormLabel>
                   <FormControl>
                     <textarea
-                      placeholder="Digite sua mensagem"
+                      placeholder={t('sessionContact.message.placeholderMessage')}
                       {...field}
                       className="aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive h-24 w-full rounded-lg border px-4 py-2 shadow-xs outline-none focus-visible:border-[#3674B5] focus-visible:ring-[3px] focus-visible:ring-[#3674B5]/50"
                     />
@@ -110,7 +113,7 @@ export function FormMsg() {
                 type="submit"
                 className="min-h-13 min-w-55 transform transition-all duration-300 ease-in-out hover:translate-y-[-5px] hover:shadow-lg hover:shadow-[#3674B5]"
               >
-                Enviar mensagem
+                {t('sessionContact.message.button')}
                 {form.formState.isSubmitting && '...'}
               </Button>
             </CardFooter>

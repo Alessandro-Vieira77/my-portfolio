@@ -9,8 +9,10 @@ import { SocialNetwork } from './components/social-network'
 import { Mail, Linkedin, Recycle, Github, MessageCircle, Paperclip } from 'lucide-react'
 import { FormMsg } from './components/form-msg'
 import CodeLogo from './assets/codeLogo.svg?react'
+import { useTranslation } from 'react-i18next'
 
 export default function App() {
+  const { t } = useTranslation()
   return (
     <div id="container" className="relative flex min-h-screen flex-col">
       <Menu />
@@ -38,28 +40,28 @@ export default function App() {
         </section>
         {/* Projects */}
         <section
-          id="projects"
+          id={t('header.projects').toLowerCase()}
           className="flex min-h-screen w-full flex-col items-center gap-4 bg-[#D1D8BE] pt-20"
         >
           <div className="flex flex-col items-center gap-2">
             <StarSvg className="h-8 w-8 object-contain" />
-            <h1 className="jersey-10-regular w-80 text-center text-7xl text-[#3674B5] uppercase text-shadow-[4px_4px_0_#000] sm:w-full">
-              Meus Projetos
-            </h1>
+            <h2 className="jersey-10-regular w-80 text-center text-7xl text-[#3674B5] uppercase text-shadow-[4px_4px_0_#000] sm:w-full">
+              {t('sessionProjects.title')}
+            </h2>
             <StarSvg className="h-6 w-6 object-contain" />
-            <p className="text-foreground text-xl">Code • Design • Innovation</p>
+            <p className="text-foreground text-xl">{t('sessionProjects.myProjectDescription')}</p>
           </div>
           <div className="w-full px-16">
             <CarouselProjects />
           </div>
         </section>
         <section
-          id="about"
+          id={t('header.about').toLowerCase()}
           className="flex min-h-screen w-full flex-col items-center justify-center bg-[#EEEFE0] bg-[repeating-linear-gradient(transparent,transparent_29px,#eedac5_30px)] pt-26"
         >
           <div className="w-65">
             <h1 className="jersey-10-regular text-center text-7xl text-black uppercase sm:w-full">
-              Sobre Mim
+              {t('sessionAbout.title')}
             </h1>
             <div className="mb-10 border-3 border-[#3674B5]"></div>
           </div>
@@ -73,41 +75,37 @@ export default function App() {
           </div>
         </section>
         <section
-          id="education"
+          id={t('header.education').toLowerCase()}
           className="flex min-h-screen w-full flex-col items-center gap-4 bg-[#EEEFE0] bg-[repeating-linear-gradient(#3674B5_0px,#3674B5_1px,transparent_1px,transparent_32px)] px-8 pt-30 pb-3.5 md:px-16"
         >
           <h2 className="titleEducation caveat-bold relative z-1 block h-13 text-4xl md:h-17 md:text-7xl">
-            Estágio – Compass Uol
+            {t('sesseionEducation.internship.title')}
           </h2>
           <div className="grid w-full grid-cols-[1fr] lg:grid-cols-[1fr_1fr]">
             <div className="grid w-full rounded-2xl border-2 bg-white p-8 shadow-md">
               <div className="flex flex-col gap-8">
                 <div className="flex w-full items-center justify-between">
                   <Badge className="jersey-10-regular text-md rounded-lg p-2 md:text-lg">
-                    {' '}
-                    Estágio: 16/09/2024 - 12/02/2025
+                    {t('sesseionEducation.internship.internshipDate')}: 16/09/2024 - 12/02/2025
                   </Badge>
                   <Recycle color="#3674B5" size={40} />
                 </div>
 
                 <div className="flex w-full flex-col gap-4">
-                  <h3 className="cabin-bold text-2xl font-bold md:text-4xl">Sobre o estágio</h3>
+                  <h3 className="cabin-bold text-2xl font-bold md:text-4xl">
+                    {t('sesseionEducation.internship.aboutInternship')}
+                  </h3>
                   <p className="text-md leading-normal sm:text-lg">
-                    Atuei como estagiário em Front-end Development (React) na Compass.uol, onde
-                    desenvolvi e mantive interfaces web modernas e responsivas utilizando React.
-                    Tive contato com o contexto de Cloud AWS, participando de projetos integrados à
-                    nuvem, consumindo APIs e seguindo boas práticas de desenvolvimento.
+                    {t('sesseionEducation.internship.aboutInternshipDescription.description1')}
                   </p>
                   <p className="text-md leading-normal sm:text-lg">
-                    Trabalhei em colaboração com times ágeis, utilizando Git, aplicando conceitos de
-                    componentização, UX/UI e clean code, o que contribuiu significativamente para
-                    meu aprendizado técnico e profissional.
+                    {t('sesseionEducation.internship.aboutInternshipDescription.description2')}
                   </p>
                 </div>
 
                 <div className="flex w-full flex-col items-center gap-4">
                   <h3 className="cabin-bold w-full text-left text-2xl font-bold md:text-4xl">
-                    Tecnologias
+                    {t('sesseionEducation.internship.technologies')}
                   </h3>
                   <div className="flex w-full flex-wrap gap-4">
                     <Badge className="cabin-bold rounded-lg text-xs"> React</Badge>
@@ -119,12 +117,15 @@ export default function App() {
                     <Badge className="cabin-bold rounded-lg text-xs"> AWS</Badge>
                     <Badge className="cabin-bold rounded-lg text-xs"> Testing Library</Badge>
                     <Badge className="cabin-bold rounded-lg text-xs"> Jest</Badge>
+                    <Badge className="cabin-bold rounded-lg text-xs"> Scrum</Badge>
                   </div>
                 </div>
               </div>
             </div>
             <div className="flex w-full flex-col items-center justify-center gap-4 p-16">
-              <h3 className="caveat-bold text-4xl font-bold">Certificado</h3>
+              <h3 className="caveat-bold text-4xl font-bold">
+                {t('sesseionEducation.internship.certificate')}
+              </h3>
               <a href="https://i.imgur.com/cabvGo2.jpeg" target="_blank">
                 <img
                   src="https://i.imgur.com/cabvGo2.jpeg"
@@ -136,21 +137,19 @@ export default function App() {
           </div>
         </section>
         <section
-          id="contact"
+          id={t('header.contact').toLowerCase()}
           className="flex min-h-screen w-full flex-col items-center gap-20 bg-[#FDFBF7] bg-[linear-gradient(#E8E8E8_1px,transparent_1px),linear-gradient(90deg,#E8E8E8_1px,transparent_1px)] bg-[length:30px_30px] px-8 pt-28 sm:px-16"
         >
           <div className="grid w-full grid-cols-[1fr] gap-4 lg:grid-cols-[1fr_1fr]">
             <div className="flex w-full flex-col gap-4">
               <h2 className="caveat-bold relative z-1 block h-13 text-4xl md:h-17 md:text-6xl">
-                Vamos conversar?
+                {t('sessionContact.conversation.title')}
               </h2>
               <p className="cabin-regular text-sm leading-normal text-[#6B4F4F] md:text-lg">
-                Estou sempre aberto a novas oportunidades, parcerias e conversas sobre tecnologia,
-                desenvolvimento web, UI/UX e projetos criativos.
+                {t('sessionContact.conversation.description1')}
               </p>
               <p className="cabin-regular text-sm leading-normal text-[#6B4F4F] md:text-lg">
-                Ficarei muito feliz em receber sua mensagem! Seja para um projeto ou apenas para
-                trocar uma ideia. ✨
+                {t('sessionContact.conversation.description2')}
               </p>
             </div>
             <div className="flex flex-col gap-4 rounded-lg bg-white p-8 shadow-md">
@@ -177,7 +176,7 @@ export default function App() {
               <a href="https://wa.me/5598985825422" target="_blank">
                 <SocialNetwork
                   icon={<MessageCircle color="#3674B5" size={25} />}
-                  text="Whatsapp (Iniciar Chat)"
+                  text={`Whatsapp (${t('sessionContact.conversation.chat')})`}
                 />
               </a>
             </div>

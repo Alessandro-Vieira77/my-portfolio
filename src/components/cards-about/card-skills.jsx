@@ -1,15 +1,23 @@
 import { Card, CardContent, CardHeader } from '@/components/ui/card'
 
 import { Database, LayoutPanelTop, Server, Wrench } from 'lucide-react'
-import { skills } from '@/db/db'
+
 import { Badge } from '../ui/badge'
+import { useContext } from 'react'
+import { Context } from '@/context/context'
+import { useTranslation } from 'react-i18next'
 
 export function CardSkills() {
+  const { skills } = useContext(Context)
+  const { t } = useTranslation()
+
   return (
     <Card className="min-h-[500px] w-full max-w-[850px] bg-[#3674B5]">
       <CardHeader className="flex w-full items-center justify-center gap-2 pt-10 text-center sm:mx-auto">
         <Wrench className="o h-6 w-6 text-white md:h-10 md:w-10" size={30} />{' '}
-        <p className="jersey-10-regular text-2xl text-white md:text-[41px]">Habilidades Técnicas</p>
+        <p className="jersey-10-regular text-2xl text-white md:text-[41px]">
+          {t('sessionAbout.cards.skills.title')}
+        </p>
       </CardHeader>
       <CardContent className="cabin-regular flex flex-col gap-8 px-8 text-sm text-white md:px-15 md:text-lg">
         <div className="flex flex-col gap-4">

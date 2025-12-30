@@ -1,0 +1,100 @@
+{
+  "header": {
+    "projects": "Projects",
+    "about": "About",
+    "education": "Education",
+    "contact": "Contact"
+  },
+  "sessionProjects": {
+    "title": "My Projects",
+    "myProjectDescription": "Code • Design • Innovation",
+    "cardButtonView": "View",
+    "projects": {
+      "finTrack": {
+        "description": "I created FinTrack, an intuitive dashboard that helps users organize their financial lives. The tool allows users to record income, expenses, and investments, save and edit each transaction by date, and view their complete history in a simple and practical way. The goal of the project is to provide clarity, autonomy, and financial control through a user-friendly interface designed to support better decision-making.",
+        "objectives": "Personal finance management for people who are starting to save and invest.",
+        "challengesEndSolutions": "FinTrack is a platform that helps people manage their personal finances."
+      }
+    },
+    "contentProject": {
+      "gallery": "Gallery",
+      "objectives": "Objectives",
+      "technologies": "Technologies",
+      "challengesEndSolutions": "Challenges & Solutions",
+      "buttonLiveProject": "Live Project"
+    }
+  },
+  "sessionAbout": {
+    "title": "About Me",
+    "cards": {
+      "whoAmI": {
+        "title": "Who am I?",
+        "description1": "I am a Software Engineering Student and Full Stack Developer, with experience in developing complete web applications, acting both on the front-end and back-end. I seek to apply good practices, create scalable solutions and constantly evolve through real projects and continuous learning.",
+        "description2": "I am passionate about learning and challenging myself, always seeking to improve my skills and contribute to projects that can positively impact society."
+      },
+      "skills": {
+        "title": "Technical Skills"
+      },
+      "softSkills": {
+        "title": "Soft Skills",
+        "badge1": "Team Communication",
+        "badge2": "Organization & Proactivity",
+        "badge3": "Fast Learning",
+        "badge4": "Creativity",
+        "badge5": "Troubleshooting",
+        "badge6": "Commitment to Goals"
+      },
+      "freelance": {
+        "title": "Interests & Freelancers",
+        "subtitle": "Interests",
+        "badge1": "Software Engineering",
+        "badge2": "Web Development",
+        "badge3": "Interface Design",
+        "badge4": "Technological Innovation",
+        "badge5": "Multidisciplinary Projects",
+        "availability": {
+          "title": "Availability",
+          "description": "Available for freelance work and projects in the areas of software development, front-end, back-end, UI/UX and interactive applications. Let's create something together?"
+        }
+      }
+    }
+  },
+  "sesseionEducation": {
+    "internship": {
+      "title": "Internship – Compass Uol",
+      "technologies": "Technologies",
+      "certificate": "Certificate",
+      "internshipDate": "internship",
+      "aboutInternship": "About the internship",
+      "aboutInternshipDescription": {
+        "description1": "I worked as a Front-end Development (React) intern at Compass.uol, where I developed and maintained modern and responsive web interfaces using React. I gained experience in the AWS Cloud environment, participating in cloud-integrated projects, consuming APIs, and following best development practices.",
+        "description2": "I collaborated with agile teams, using Git, applying concepts of componentization, UX/UI and clean code, which significantly contributed to my technical and professional learning."
+      }
+    }
+  },
+  "sessionContact": {
+    "conversation": {
+      "title": "Let's talk?",
+      "description1": "We are always open to new opportunities, partnerships and conversations about technology, web development, UI/UX and creative projects.",
+      "description2": "I'd be very happy to receive your message! Whether it's for a project or just to exchange ideas.",
+      "chat": "Start chat"
+    },
+    "message": {
+      "title": "Send a message",
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "nameError": "The name must have at least 3 characters.",
+      "emailError": "Invalid email address.",
+      "messageError": "The message must be at least 10 characters long.",
+      "placeholderName": "Enter your name",
+      "placeholderEmail": "Enter your email",
+      "placeholderMessage": "Enter your message",
+      "button": "Send message"
+    }
+  },
+  "notifications": {
+    "success": "Message sent successfully!",
+    "error": "Error sending message"
+  }
+}

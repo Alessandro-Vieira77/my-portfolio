@@ -11,8 +11,11 @@ import {
 } from '@/components/ui/dialog'
 import { ExternalLink, Github, X } from 'lucide-react'
 import { Badge } from '@/components/ui/badge'
+import { useTranslation } from 'react-i18next'
 
 export function DialogProject({ projects }) {
+  const { t } = useTranslation()
+
   return (
     <Dialog>
       <form>
@@ -21,7 +24,7 @@ export function DialogProject({ projects }) {
             id="view"
             className="jersey-10-regular rounded-none text-xl font-bold transition-all duration-200 ease-in-out hover:translate-y-[-2px] hover:scale-110 hover:transform hover:bg-[#3674B5] hover:text-white hover:shadow-[4px_4px_0px_#000]"
           >
-            Ver +
+            {t('sessionProjects.cardButtonView')} +
           </Button>
         </DialogTrigger>
         <DialogContent className="flex h-[700px] flex-col overflow-y-auto border-3 border-black bg-white px-6 pt-8 shadow-[15px_15px_0px_#000] sm:max-w-[800px]">
@@ -48,7 +51,7 @@ export function DialogProject({ projects }) {
               <div className="flex items-center gap-2">
                 <p className="pb-3.5 text-4xl font-bold text-[#3674B5]">|</p>
                 <p className="jersey-10-regular text-3xl font-bold text-black text-shadow-[3px_3px_0px_#4DA8DA]">
-                  🖼️ Galeria
+                  🖼️ {t('sessionProjects.contentProject.gallery')}
                 </p>
               </div>
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-[repeat(3,minmax(0,1fr))]">
@@ -68,7 +71,7 @@ export function DialogProject({ projects }) {
                 <div className="flex items-center gap-2">
                   <p className="pb-3.5 text-4xl font-bold text-[#3674B5]">|</p>
                   <p className="jersey-10-regular text-3xl text-black text-shadow-[3px_3px_0px_#4DA8DA]">
-                    🎯 Objetivos
+                    🎯 {t('sessionProjects.contentProject.objectives')}
                   </p>
                 </div>
                 <p className="leading-normal text-[#819A91]">
@@ -79,7 +82,7 @@ export function DialogProject({ projects }) {
                 <div className="flex items-center gap-2">
                   <p className="pb-3.5 text-4xl font-bold text-[#3674B5]">|</p>
                   <p className="jersey-10-regular text-3xl text-black text-shadow-[3px_3px_0px_#4DA8DA]">
-                    🛠️ Tecnologias
+                    🛠️ {t('sessionProjects.contentProject.technologies')}
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-2">
@@ -99,7 +102,7 @@ export function DialogProject({ projects }) {
                 <p className="pb-3.5 text-4xl font-bold text-[#d38aa3]">|</p>
                 <p className="jersey-10-regular text-3xl text-black text-shadow-[3px_3px_0px_#4DA8DA]">
                   {' '}
-                  ⏳ Desafios e Soluções
+                  ⏳ {t('sessionProjects.contentProject.challengesEndSolutions')}
                 </p>
               </div>
 
@@ -115,7 +118,7 @@ export function DialogProject({ projects }) {
               asChild
             >
               <a href={projects.projectContent?.deploy} target="_blank">
-                <ExternalLink size={24} /> Projeto ao vivo
+                <ExternalLink size={24} /> {t('sessionProjects.contentProject.buttonLiveProject')}
               </a>
             </Button>
 

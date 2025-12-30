@@ -1,9 +1,17 @@
 import { LanguageButton } from '../linguage-button'
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 
 export function Header() {
-  const navNames = ['Projects', 'About', 'Education', 'Contact']
   const [language, setLanguage] = useState('en')
+  const { t, i18n } = useTranslation()
+  const navNames = [
+    `${t('header.projects')}`,
+    `${t('header.about')}`,
+    `${t('header.education')}`,
+    `${t('header.contact')}`,
+  ]
+
   return (
     <header className="fixed top-0 left-1/2 z-20 mx-auto mt-6 hidden w-full max-w-[700px] -translate-x-1/2 transform rounded-full bg-[#819A91] px-6 py-4 drop-shadow-2xl md:block">
       <nav className="w-full">
@@ -23,7 +31,10 @@ export function Header() {
             <LanguageButton
               L1="EN"
               L2="PT"
-              onClick={() => setLanguage('pt')}
+              onClick={() => {
+                setLanguage('pt')
+                i18n.changeLanguage('pt-BR')
+              }}
               color="text-black"
               colorL1="text-black"
               colorL2="text-white"
@@ -32,7 +43,10 @@ export function Header() {
             <LanguageButton
               L1="PT"
               L2="EN"
-              onClick={() => setLanguage('en')}
+              onClick={() => {
+                setLanguage('en')
+                i18n.changeLanguage('en')
+              }}
               color="text-white"
               colorL1="text-white"
               colorL2="text-black"
