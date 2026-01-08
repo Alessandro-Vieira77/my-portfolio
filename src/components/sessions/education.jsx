@@ -7,7 +7,7 @@ export function Education({ id }) {
   return (
     <section
       id={id}
-      className="flex min-h-screen w-full flex-col items-center gap-4 bg-[#EEEFE0] bg-[repeating-linear-gradient(#3674B5_0px,#3674B5_1px,transparent_1px,transparent_32px)] px-8 pt-30 pb-3.5 md:px-16"
+      className="flex min-h-screen w-full flex-col items-center gap-4 bg-[#EEEFE0] bg-[repeating-linear-gradient(#3674B5_0px,#3674B5_1px,transparent_1px,transparent_32px)] px-4 pt-30 pb-3.5 md:px-16"
     >
       <h2 className="titleEducation caveat-bold relative z-1 block h-13 text-3xl sm:text-4xl md:h-17 md:text-7xl">
         {t('sesseionEducation.internship.title')}

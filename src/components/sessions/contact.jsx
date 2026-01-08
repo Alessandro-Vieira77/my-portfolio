@@ -8,7 +8,7 @@ export function Contact({ id }) {
   return (
     <section
       id={id}
-      className="flex min-h-screen w-full flex-col items-center gap-20 bg-[#FDFBF7] bg-[linear-gradient(#E8E8E8_1px,transparent_1px),linear-gradient(90deg,#E8E8E8_1px,transparent_1px)] bg-[length:30px_30px] px-8 pt-28 sm:px-16"
+      className="flex min-h-screen w-full flex-col items-center gap-20 bg-[#FDFBF7] bg-[linear-gradient(#E8E8E8_1px,transparent_1px),linear-gradient(90deg,#E8E8E8_1px,transparent_1px)] bg-[length:30px_30px] px-4 pt-28 sm:px-16"
     >
       <div className="grid w-full grid-cols-[1fr] gap-4 lg:grid-cols-[1fr_1fr]">
         <div className="flex w-full flex-col gap-4">
@@ -25,27 +25,27 @@ export function Contact({ id }) {
         <div className="flex flex-col gap-4 rounded-lg bg-white p-8 shadow-md">
           <a href="mailto:valessandrovieira@gmail.com">
             <SocialNetwork
-              icon={<Mail color="#3674B5" size={25} />}
+              icon={<Mail color="#3674B5" className="size-3 sm:size-6" />}
               text="valessandrovieira@gmail.com"
             />
           </a>
           <a href="https://www.linkedin.com/in/alessandro-vieira02" target="_blank">
             <SocialNetwork
-              icon={<Linkedin color="#3674B5" size={25} />}
+              icon={<Linkedin color="#3674B5" className="w-3" />}
               text="/alessandro-vieira02"
             />
           </a>
 
           <a href="https://github.com/Alessandro-Vieira77" target="_blank">
             <SocialNetwork
-              icon={<Github color="#3674B5" size={25} />}
+              icon={<Github color="#3674B5" className="size-3 sm:size-6" />}
               text="/Alessandro-Vieira77"
             />
           </a>
 
           <a href="https://wa.me/5598985825422" target="_blank">
             <SocialNetwork
-              icon={<MessageCircle color="#3674B5" size={25} />}
+              icon={<MessageCircle color="#3674B5" className="size-3 sm:size-6" />}
               text={`Whatsapp (${t('sessionContact.conversation.chat')})`}
             />
           </a>

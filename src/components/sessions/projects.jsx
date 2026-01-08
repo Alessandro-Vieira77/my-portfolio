@@ -17,7 +17,7 @@ export function Projects({ id }) {
         <StarSvg className="h-6 w-6 object-contain" />
         <p className="text-foreground text-xl">{t('sessionProjects.myProjectDescription')}</p>
       </div>
-      <div className="w-full px-16">
+      <div className="w-full px-4 sm:px-16">
         <CarouselProjects />
       </div>
     </section>

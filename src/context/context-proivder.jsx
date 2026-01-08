@@ -71,7 +71,7 @@ export const ContextProvider = ({ children }) => {
         deploy:
           'https://doutor-agenda-one-gamma.vercel.app/dashboard?from=2026-01-08&to=2026-02-08',
       },
-      categorys: ['Clinic', 'Sass', 'Design', 'Dashboard', 'Full Stack'],
+      categorys: ['Clinic', 'Sass', 'Dashboard', 'Full Stack'],
     },
     {
       name: 'Fin Track',

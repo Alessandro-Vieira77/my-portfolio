@@ -14,7 +14,7 @@ export function About({ id }) {
         </h1>
         <div className="mb-10 border-3 border-[#3674B5]"></div>
       </div>
-      <div className="relative w-full px-4">
+      <div className="relative w-full">
         <img
           className="absolute -top-5 left-1/2 z-10 mx-auto mt-0 h-[110px] w-[110px] -translate-x-1/2 rounded-full border-3 border-white object-cover"
           src="https://media.licdn.com/dms/image/v2/D4E03AQGdZ8dDqI2DIA/profile-displayphoto-crop_800_800/B4EZipH2Z.GYAQ-/0/1755184065034?e=1769040000&v=beta&t=jSb9zP4nuyLtyeK4mElSyqOS1sMZ0ppaIfQqEGGrjPg"
