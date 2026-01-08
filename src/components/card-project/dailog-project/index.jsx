@@ -57,10 +57,11 @@ export function DialogProject({ projects }) {
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-[repeat(3,minmax(0,1fr))]">
                 {projects.projectContent?.gallery.map((image, index) => (
                   <img
+                    style={{ imageRendering: 'auto' }}
                     key={index}
                     src={image}
                     alt={projects.name}
-                    className="h-[150px] w-full rounded-lg border-2 border-black object-cover shadow-[5px_5px_0px_#000] transition-all duration-300 ease-in-out hover:scale-[1.03] hover:transform hover:shadow-[5px_5px_0px_#3674B5] sm:h-[150px] md:h-[200px]"
+                    className="h-auto w-full overflow-hidden rounded-lg border-2 border-black object-fill shadow-[5px_5px_0px_#000] transition-all duration-300 ease-in-out hover:scale-[1.03] hover:transform hover:shadow-[5px_5px_0px_#3674B5] sm:h-[150px] md:h-[200px]"
                   />
                 ))}
               </div>
