@@ -14,6 +14,11 @@
         "description": "Criei o FinTrack, um painel intuitivo que ajuda os usuários a organizar suas vidas financeiras. A ferramenta permite que os usuários registrem receitas, despesas e investimentos, salvem e editem cada transação por data e visualizem todo o seu histórico de forma simples e prática. O objetivo do projeto é proporcionar clareza, autonomia e controle financeiro por meio de uma interface amigável, projetada para auxiliar na tomada de melhores decisões.",
         "objectives": "Gerenciamento de finanças pessoais para pessoas que estão começando a economizar e investir.",
         "challengesEndSolutions": "FinTrack é uma plataforma que ajuda as pessoas a gerenciar suas finanças pessoais."
+      },
+      "doctorAgenda": {
+        "description": "Este projeto é uma solução SaaS para clínicas médicas, projetada para automatizar a agendamento de consultas e gerenciamento de pacientes. A aplicação centraliza informações de pacientes e agendamentos, lida com conflitos de agendamentos de forma mais eficiente e simplifica processos.",
+        "objectives": "Automatização de clínicas médicas para agendamento de consultas e gerenciamento de pacientes.",
+        "challengesEndSolutions": "O desafio mais significativo foi integrar com Stripe; criar e configurar um webhook foi realmente desafiador."
       }
     },
     "contentProject": {
