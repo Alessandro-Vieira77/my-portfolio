@@ -18,7 +18,7 @@ export function Home({ id }) {
       />
       <CodeLogo
         id="hero-image"
-        className="z-10 h-auto w-full max-w-[400px] drop-shadow-2xl"
+        className="z-10 h-auto w-full max-w-[400px] object-contain drop-shadow-2xl"
         alt=""
       />
     </section>

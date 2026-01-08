@@ -9,17 +9,17 @@ export function Education({ id }) {
       id={id}
       className="flex min-h-screen w-full flex-col items-center gap-4 bg-[#EEEFE0] bg-[repeating-linear-gradient(#3674B5_0px,#3674B5_1px,transparent_1px,transparent_32px)] px-8 pt-30 pb-3.5 md:px-16"
     >
-      <h2 className="titleEducation caveat-bold relative z-1 block h-13 text-4xl md:h-17 md:text-7xl">
+      <h2 className="titleEducation caveat-bold relative z-1 block h-13 text-3xl sm:text-4xl md:h-17 md:text-7xl">
         {t('sesseionEducation.internship.title')}
       </h2>
       <div className="grid w-full grid-cols-[1fr] lg:grid-cols-[1fr_1fr]">
         <div className="grid w-full rounded-2xl border-2 bg-white p-8 shadow-md">
           <div className="flex flex-col gap-8">
             <div className="flex w-full items-center justify-between">
-              <Badge className="jersey-10-regular text-md rounded-lg p-2 md:text-lg">
+              <Badge className="jersey-10-regular md:text-md rounded-lg p-2 text-xs md:text-lg">
                 {t('sesseionEducation.internship.internshipDate')}: 16/09/2024 - 12/02/2025
               </Badge>
-              <Recycle color="#3674B5" size={40} />
+              <Recycle color="#3674B5" className="size-6 md:size-10" />
             </div>
 
             <div className="flex w-full flex-col gap-4">

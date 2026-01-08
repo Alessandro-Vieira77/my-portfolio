@@ -10,10 +10,10 @@ import { Contact } from './components/sessions/contact'
 export default function App() {
   const { t } = useTranslation()
   return (
-    <div id="container" className="relative flex min-h-screen flex-col">
+    <div id="container" className="flex min-h-screen w-full flex-col">
       <Menu />
       <Header />
-      <main>
+      <main className="w-full">
         <Home id={t('header.home').toLowerCase()} />
         <Projects id={t('header.projects').toLowerCase()} />
         <About id={t('header.about').toLowerCase()} />
