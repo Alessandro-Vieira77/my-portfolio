@@ -51,13 +51,13 @@ export function FormMsg() {
   }
 
   return (
-    <Card className="relative w-[850px]">
+    <Card className="relative w-full max-w-[850px]">
       <CardHeader>
         <Paperclip
           size={40}
           className="absolute inset-1/2 -top-1 -translate-x-1/2 -translate-y-1/2 text-[var(--ring)]"
         />
-        <h2 className="jersey-10-regular text-center text-4xl font-bold">
+        <h2 className="jersey-10-regular text-center text-2xl font-bold sm:text-3xl lg:text-4xl">
           {t('sessionContact.message.title')}✨
         </h2>
       </CardHeader>

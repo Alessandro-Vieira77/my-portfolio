@@ -27,7 +27,7 @@ export function DialogProject({ projects }) {
             {t('sessionProjects.cardButtonView')} +
           </Button>
         </DialogTrigger>
-        <DialogContent className="flex h-[700px] flex-col overflow-y-auto border-3 border-black bg-white px-6 pt-8 shadow-[15px_15px_0px_#000] sm:max-w-[800px]">
+        <DialogContent className="flex h-[500px] flex-col overflow-y-auto border-3 border-black bg-white px-2 pt-8 shadow-[15px_15px_0px_#000] sm:h-[700px] sm:max-w-[800px] sm:px-6">
           <DialogClose className="absolute top-4 right-4 cursor-pointer rounded-full border-2 border-black bg-white p-1 transition-all duration-200 ease-in-out hover:translate-y-[-2px] hover:scale-125 hover:transform hover:border-none hover:bg-[#3674B5] hover:text-white">
             <X size={28} />
           </DialogClose>
@@ -37,10 +37,10 @@ export function DialogProject({ projects }) {
               alt={projects.name}
               className="h-[200px] w-full rounded-lg border-3 border-black object-cover sm:h-[300px]"
             />
-            <DialogTitle className="text-left text-[40px] font-bold text-[#3674B5]">
+            <DialogTitle className="text-left text-[28px] font-bold text-[#3674B5] sm:text-[40px]">
               {projects.name}
             </DialogTitle>
-            <DialogDescription className="text-left text-xl leading-normal text-[#819A91]">
+            <DialogDescription className="text-left text-sm leading-normal text-[#819A91] sm:text-xl">
               {projects.projectContent?.description}
             </DialogDescription>
           </DialogHeader>
@@ -50,7 +50,7 @@ export function DialogProject({ projects }) {
             <div className="flex w-full flex-col gap-4">
               <div className="flex items-center gap-2">
                 <p className="pb-3.5 text-4xl font-bold text-[#3674B5]">|</p>
-                <p className="jersey-10-regular text-3xl font-bold text-black text-shadow-[3px_3px_0px_#4DA8DA]">
+                <p className="jersey-10-regular text-2xl font-bold text-black text-shadow-[3px_3px_0px_#4DA8DA] sm:text-3xl">
                   🖼️ {t('sessionProjects.contentProject.gallery')}
                 </p>
               </div>
@@ -71,25 +71,25 @@ export function DialogProject({ projects }) {
               <div>
                 <div className="flex items-center gap-2">
                   <p className="pb-3.5 text-4xl font-bold text-[#3674B5]">|</p>
-                  <p className="jersey-10-regular text-3xl text-black text-shadow-[3px_3px_0px_#4DA8DA]">
+                  <p className="jersey-10-regular text-2xl text-black text-shadow-[3px_3px_0px_#4DA8DA] sm:text-3xl">
                     🎯 {t('sessionProjects.contentProject.objectives')}
                   </p>
                 </div>
-                <p className="leading-normal text-[#819A91]">
+                <p className="leading-normal text-[#819A91] sm:text-xl">
                   {projects.projectContent?.objectives}
                 </p>
               </div>
               <div>
                 <div className="flex items-center gap-2">
                   <p className="pb-3.5 text-4xl font-bold text-[#3674B5]">|</p>
-                  <p className="jersey-10-regular text-3xl text-black text-shadow-[3px_3px_0px_#4DA8DA]">
+                  <p className="jersey-10-regular text-2xl text-black text-shadow-[3px_3px_0px_#4DA8DA] sm:text-3xl">
                     🛠️ {t('sessionProjects.contentProject.technologies')}
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-2">
                   {projects.projectContent?.technologies.map((technology, index) => (
                     <Badge
-                      className="cabin-regular border-2 border-black bg-[#D1D8BE] px-2.5 py-1 text-sm text-black"
+                      className="cabin-regular border-2 border-black bg-[#D1D8BE] px-2.5 py-1 text-xs text-black md:text-sm"
                       key={index}
                     >
                       {technology}
@@ -101,13 +101,13 @@ export function DialogProject({ projects }) {
             <div className="flex flex-col gap-4">
               <div className="flex items-center gap-2">
                 <p className="pb-3.5 text-4xl font-bold text-[#d38aa3]">|</p>
-                <p className="jersey-10-regular text-3xl text-black text-shadow-[3px_3px_0px_#4DA8DA]">
+                <p className="jersey-10-regular text-2xl text-black text-shadow-[3px_3px_0px_#4DA8DA] sm:text-3xl">
                   {' '}
                   ⏳ {t('sessionProjects.contentProject.challengesEndSolutions')}
                 </p>
               </div>
 
-              <p className="leading-normal text-[#819A91]">
+              <p className="text-sm leading-normal text-[#819A91] sm:text-xl">
                 {projects.projectContent?.challengesEndSolutions}
               </p>
             </div>

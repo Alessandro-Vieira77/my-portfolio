@@ -21,7 +21,7 @@ export function Menu() {
     `${t('header.contact')}`,
   ]
   return (
-    <div className="fixed top-6 left-0 z-20 flex w-full justify-between px-6 md:hidden">
+    <div className="fixed top-6 left-0 z-20 flex w-full justify-between px-4 sm:px-6 md:hidden">
       <Sheet>
         <SheetTrigger className="rounded-full border border-white bg-[#bbe0ef] px-4 py-2">
           <TextAlignJustify size={30} color="#3674B5" />

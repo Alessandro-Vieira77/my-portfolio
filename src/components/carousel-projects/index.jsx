@@ -16,7 +16,7 @@ export function CarouselProjects() {
   const { projects } = useContext(Context)
   return (
     <Carousel className="mx-auto w-full max-w-4xl">
-      <CarouselContent className="gap-1 border-2 border-red-500">
+      <CarouselContent className="gap-1">
         {projects.map((project, index) => (
           <CarouselItem
             key={index}
