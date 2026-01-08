@@ -10,11 +10,11 @@ export function CardFreelance() {
     <Card className="min-h-[500px] w-full max-w-[850px] bg-[#3674B5]">
       <CardHeader className="flex items-center justify-center gap-2 pt-6">
         <Sparkles className="h-6 w-6 text-white md:h-10 md:w-10" size={30} />{' '}
-        <p className="jersey-10-regular text-2xl text-white md:text-[41px]">
+        <p className="jersey-10-regular text-xl text-white sm:text-2xl md:text-[41px]">
           {t('sessionAbout.cards.freelance.title')}
         </p>
       </CardHeader>
-      <CardContent className="cabin-regular w-full px-8 text-sm text-white md:px-15 md:text-lg">
+      <CardContent className="cabin-regular w-full px-4 text-sm text-white md:px-15 md:text-lg">
         <div className="flex w-full justify-center gap-2">
           <Star size={20} className="text-white" />
           <h2 className="jersey-10-regular pb-4 text-2xl text-white">
