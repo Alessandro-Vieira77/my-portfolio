@@ -13,12 +13,12 @@
       "finTrack": {
         "description": "I created FinTrack, an intuitive dashboard that helps users organize their financial lives. The tool allows users to record income, expenses, and investments, save and edit each transaction by date, and view their complete history in a simple and practical way. The goal of the project is to provide clarity, autonomy, and financial control through a user-friendly interface designed to support better decision-making.",
         "objectives": "Personal finance management for people who are starting to save and invest.",
-        "challengesEndSolutions": "FinTrack is a platform that helps people manage their personal finances."
+        "challengesEndSolutions": "The challenge in this project involved correctly implementing date formatting and handling query string manipulation. Tackling these aspects required research and testing, resulting in a significant improvement in my skills."
       },
       "doctorAgenda": {
         "description": "This project is a SaaS solution for medical clinics, designed to automate appointment scheduling and patient management. The application centralizes patient and scheduling information, handles scheduling conflicts more efficiently, and streamlines processes.",
         "objectives": "Medical clinic automation for appointment scheduling and patient management.",
-        "challengesEndSolutions": "The challenge in this project involved correctly implementing date formatting and handling query string manipulation. Tackling these aspects required research and testing, resulting in a significant improvement in my skills."
+        "challengesEndSolutions": "The challenge in this project was integrating with Stripe; creating and configuring a webhook was truly challenging."
       }
     },
     "contentProject": {
