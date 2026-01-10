@@ -18,7 +18,7 @@
       "doctorAgenda": {
         "description": "This project is a SaaS solution for medical clinics, designed to automate appointment scheduling and patient management. The application centralizes patient and scheduling information, handles scheduling conflicts more efficiently, and streamlines processes.",
         "objectives": "Medical clinic automation for appointment scheduling and patient management.",
-        "challengesEndSolutions": "The challenge in this project was integrating with Stripe; creating and configuring a webhook was truly challenging."
+        "challengesEndSolutions": "The challenge in this project involved correctly implementing date formatting and handling query string manipulation. Tackling these aspects required research and testing, resulting in a significant improvement in my skills."
       }
     },
     "contentProject": {

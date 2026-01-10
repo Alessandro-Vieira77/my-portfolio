@@ -18,7 +18,7 @@
       "doctorAgenda": {
         "description": "Este projeto é uma solução SaaS para clínicas médicas, projetada para automatizar a agendamento de consultas e gerenciamento de pacientes. A aplicação centraliza informações de pacientes e agendamentos, lida com conflitos de agendamentos de forma mais eficiente e simplifica processos.",
         "objectives": "Automatização de clínicas médicas para agendamento de consultas e gerenciamento de pacientes.",
-        "challengesEndSolutions": "O desafio mais significativo foi integrar com Stripe; criar e configurar um webhook foi realmente desafiador."
+        "challengesEndSolutions": "O desafio deste projeto envolveu implementar corretamente a formatação de datas e lidar com a manipulação de query strings. Enfrentar esses pontos exigiu estudo e testes, resultando em um aprimoramento significativo das minhas habilidades."
       }
     },
     "contentProject": {
