@@ -57,7 +57,10 @@ export function Education({ id }) {
           <h3 className="caveat-bold text-4xl font-bold">
             {t('sesseionEducation.internship.certificate')}
           </h3>
-          <a href="https://i.imgur.com/cabvGo2.jpeg" target="_blank">
+          <a
+            href="https://image2url.com/r2/default/documents/1767967968449-395d99b9-1922-4a0b-8039-590ec75bb264.pdf"
+            target="_blank"
+          >
             <img
               src="https://i.imgur.com/cabvGo2.jpeg"
               className="w-fit rotate-2 rounded-lg object-contain shadow-md transition-all duration-300 hover:scale-110 hover:rotate-0"

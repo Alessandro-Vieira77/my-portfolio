@@ -68,32 +68,39 @@ export const ContextProvider = ({ children }) => {
         ],
         challengesEndSolutions: t('sessionProjects.projects.doctorAgenda.challengesEndSolutions'),
         repository: 'https://github.com/Alessandro-Vieira77/doutor-agenda.git',
-        deploy:
-          'https://doutor-agenda-one-gamma.vercel.app/dashboard?from=2026-01-08&to=2026-02-08',
+        deploy: 'https://doutor-agenda-one-gamma.vercel.app/',
       },
       categorys: ['Clinic', 'Sass', 'Dashboard', 'Full Stack'],
     },
     {
-      name: 'Fin Track',
-      description: 'Gerenciamento de finanças pessoais',
-      image: 'https://i.imgur.com/KhCqZyA.png',
-      gallery: [
-        'https://i.imgur.com/KhCqZyA.png',
-        'https://i.imgur.com/aEM1VPC.png',
-        'https://i.imgur.com/qBAUf2p.png',
-      ],
-      categorys: ['Project', 'Design', 'Code', 'Full Stack'],
-    },
-    {
-      name: 'Fin Track',
-      description: 'Gerenciamento de finanças pessoais',
-      image: 'https://i.imgur.com/KhCqZyA.png',
-      gallery: [
-        'https://i.imgur.com/KhCqZyA.png',
-        'https://i.imgur.com/aEM1VPC.png',
-        'https://i.imgur.com/qBAUf2p.png',
-      ],
-      categorys: ['Project', 'Design', 'Code', 'Full Stack'],
+      name: 'Task Manager',
+      image:
+        'https://image2url.com/r2/default/gifs/1768490815887-38c76647-0a03-42d8-aca4-0bca57b6b11f.gif',
+      projectContent: {
+        gallery: [
+          'https://image2url.com/r2/default/gifs/1768491223980-3fe2a6d0-fe08-485d-9e84-4e559f7aa467.gif',
+          'https://image2url.com/r2/default/gifs/1768491514106-51f4afc2-a605-4a07-b77c-eff0f8e8faa8.gif',
+          'https://image2url.com/r2/default/gifs/1768491824353-b32a384b-d819-4cb2-90d3-2a28867d450e.gif',
+        ],
+        description: t('sessionProjects.projects.taskManager.description'),
+        objectives: t('sessionProjects.projects.taskManager.objectives'),
+        technologies: [
+          'React',
+          'JavaScript',
+          'Tailwind CSS',
+          'Tailwind variants',
+          'React router',
+          'Tanstack query',
+          'React hook form',
+          'Zod',
+          'Axios',
+          'React transition group',
+        ],
+        challengesEndSolutions: t('sessionProjects.projects.taskManager.challengesEndSolutions'),
+        repository: 'https://github.com/Alessandro-Vieira77/task-manager.git',
+        deploy: 'https://task-manager-sandy-omega.vercel.app/',
+      },
+      categorys: ['Code', 'React', 'Components', 'Tasks'],
     },
   ]
 

@@ -19,6 +19,11 @@
         "description": "Este projeto é uma solução SaaS para clínicas médicas, projetada para automatizar a agendamento de consultas e gerenciamento de pacientes. A aplicação centraliza informações de pacientes e agendamentos, lida com conflitos de agendamentos de forma mais eficiente e simplifica processos.",
         "objectives": "Automatização de clínicas médicas para agendamento de consultas e gerenciamento de pacientes.",
         "challengesEndSolutions": "O desafio mais significativo foi integrar com Stripe; criar e configurar um webhook foi realmente desafiador."
+      },
+      "taskManager": {
+        "description": "Criei o Task Manager, uma ferramenta de gerenciamento de tarefas que ajuda os usuários a organizar e priorizar suas responsabilidades diárias. A ferramenta permite que os usuários crie e editem tarefas, defina prazos e prioridades, e visualize uma lista de tarefas ordenada. O objetivo do projeto é proporcionar clareza, autonomia e controle de tarefas por meio de uma interface amigável, projetada para auxiliar na tomada de melhores decisões.",
+        "objectives": "Gerenciamento de tarefas para ajudar os usuários a organizar e priorizar suas responsabilidades diárias.",
+        "challengesEndSolutions": "Usar o React Query para realizar chamadas de API de forma eficiente e aproveitar seus recursos de cache para melhorar o desempenho da aplicação."
       }
     },
     "contentProject": {

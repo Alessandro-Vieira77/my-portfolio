@@ -19,6 +19,11 @@
         "description": "This project is a SaaS solution for medical clinics, designed to automate appointment scheduling and patient management. The application centralizes patient and scheduling information, handles scheduling conflicts more efficiently, and streamlines processes.",
         "objectives": "Medical clinic automation for appointment scheduling and patient management.",
         "challengesEndSolutions": "The challenge in this project was integrating with Stripe; creating and configuring a webhook was truly challenging."
+      },
+      "taskManager": {
+        "description": "I created the Task Manager, a task management tool that helps users organize and prioritize their daily responsibilities. The tool allows users to create and edit tasks, set deadlines and priorities, and view a sorted task list. The goal of the project is to provide clarity, autonomy, and task control through a user-friendly interface, designed to support better decision-making.",
+        "objectives": "Task management to help users organize and prioritize their daily responsibilities.",
+        "challengesEndSolutions": "Using React Query to make API calls efficiently and take advantage of its caching features to improve application performance."
       }
     },
     "contentProject": {
