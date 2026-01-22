@@ -16,8 +16,8 @@ export function About({ id }) {
       </div>
       <div className="relative w-full">
         <img
-          className="absolute -top-5 left-1/2 z-10 mx-auto mt-0 h-[110px] w-[110px] -translate-x-1/2 rounded-full border-3 border-white object-cover"
-          src="https://media.licdn.com/dms/image/v2/D4E03AQGdZ8dDqI2DIA/profile-displayphoto-crop_800_800/B4EZipH2Z.GYAQ-/0/1755184065034?e=1769040000&v=beta&t=jSb9zP4nuyLtyeK4mElSyqOS1sMZ0ppaIfQqEGGrjPg"
+          className="absolute -top-5 left-1/2 z-10 mx-auto mt-0 h-[110px] w-[110px] -translate-x-1/2 rounded-full border-3 border-white object-center"
+          src="https://image2url.com/r2/default/files/1769094146906-d29e144a-0490-47c9-bedd-880449b6ada9.png"
           alt=""
         />
         <CarouselAbout />
